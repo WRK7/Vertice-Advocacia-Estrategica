@@ -1,23 +1,83 @@
-# Front-end - Vértice Advocacia Estratégica
+# Vértice Advocacia Estratégica - Site Institucional
 
-Site institucional estático desenvolvido para representar a identidade da **Vértice Advocacia Estratégica**, com foco em PMEs, startups e empresas de serviços.
+Site institucional do escritório de advocacia Vértice Advocacia Estratégica, especializado em Direito Empresarial, Compliance Digital e Defesa Trabalhista.
 
-## Como utilizar
+## Estrutura do Projeto
 
-- **Opção 1 (mais simples)**: abra o arquivo `index.html` diretamente no navegador (clique duas vezes ou arraste para uma aba).
-- **Opção 2 (servidor local)**:
-  - Com Node.js instalado, rode um servidor simples, por exemplo:
-  - `npx serve .` ou usando alguma extensão de "Live Server" do VS Code/Cursor.
+```
+Vertice-Advocacia-Estrategica/
+├── index.html          # Página principal
+├── assets/
+│   ├── css/
+│   │   └── styles.css  # Estilos do site
+│   └── js/
+│       └── main.js     # Scripts JavaScript
+└── README.md           # Este arquivo
+```
 
-## Estrutura
+## Características do Design
 
-- `index.html`: estrutura principal da página (Home, Sobre, Serviços, Metodologia, Conteúdo e Contato).
-- `assets/css/styles.css`: estilos globais, responsividade e identidade visual (azul petróleo, cinza chumbo, off-white).
-- `assets/js/main.js`: pequenas interações (menu mobile e ano dinâmico no rodapé).
+- **Design Institucional**: Layout sério e profissional, adequado para um escritório de advocacia
+- **Tipografia**: Uso de fontes serifadas (Crimson Text) para títulos e sans-serif (Inter) para textos
+- **Paleta de Cores**: Azul escuro, cinza e dourado, transmitindo seriedade e profissionalismo
+- **Responsivo**: Totalmente adaptável para dispositivos móveis, tablets e desktops
 
-## Adaptações sugeridas
+## Seções do Site
 
-- Substituir textos de exemplo por cases reais, conteúdos de blog e dados de contato verdadeiros.
-- Integrar o formulário de contato com um backend ou serviço de envio de e-mails (Formspree, backend próprio, etc.).
+1. **Header**: Navegação principal com menu responsivo
+2. **Hero**: Apresentação do escritório com call-to-action
+3. **Sobre o Escritório**: História, metodologia e estatísticas
+4. **Áreas de Atuação**: 6 especialidades jurídicas detalhadas
+5. **Equipe**: Apresentação dos sócios fundadores
+6. **Publicações**: Artigos e análises jurídicas
+7. **Contato**: Formulário e informações de contato
+8. **Footer**: Links e informações institucionais
 
+## Como Usar
 
+1. Abra o arquivo `index.html` em um navegador web
+2. Navegue pelas seções usando o menu superior
+3. Use o formulário de contato para enviar mensagens (requer configuração de backend)
+
+## Personalização
+
+### Alterar Informações de Contato
+
+Edite a seção de contato no `index.html`:
+- E-mail
+- Telefone
+- Endereço
+
+### Adicionar Novos Artigos
+
+Adicione novos cards na seção "Publicações" seguindo a estrutura existente.
+
+### Modificar Cores
+
+Altere as variáveis CSS em `assets/css/styles.css`:
+```css
+:root {
+    --cor-azul-escuro: #1a2332;
+    --cor-dourado: #c9a961;
+    /* ... */
+}
+```
+
+## Próximos Passos
+
+- [ ] Integrar formulário de contato com backend
+- [ ] Adicionar mais artigos e publicações
+- [ ] Implementar sistema de blog
+- [ ] Adicionar página de casos de sucesso
+- [ ] Integrar com redes sociais
+
+## Tecnologias Utilizadas
+
+- HTML5
+- CSS3 (Grid, Flexbox)
+- JavaScript (Vanilla)
+- Google Fonts (Crimson Text, Inter)
+
+## Licença
+
+© 2024 Vértice Advocacia Estratégica. Todos os direitos reservados.
