@@ -154,13 +154,17 @@
                 <p class="section-label">Áreas de Atuação</p>
                 <h2 class="section-title">Especialidades Jurídicas</h2>
             </div>
-            <div class="areas-grid">
-                <div class="area-card">
+            <div class="areas-carousel-wrapper">
+                <button class="carousel-btn carousel-btn-prev" aria-label="Anterior">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M15 18l-6-6 6-6"/>
+                    </svg>
+                </button>
+                <div class="areas-carousel">
+                    <div class="areas-carousel-track">
+                        <div class="area-card">
                     <div class="area-icon">📋</div>
                     <h3 class="area-title">Direito Contratual Empresarial</h3>
-                    <p class="area-description">
-                        Revisão, elaboração e negociação de contratos comerciais, de prestação de serviços, de distribuição, de franquia e demais instrumentos contratuais. Atuamos na blindagem contratual para prevenir litígios futuros e garantir segurança jurídica nas operações empresariais.
-                    </p>
                     <ul class="area-list">
                         <li>Revisão e elaboração de contratos</li>
                         <li>Negociação contratual</li>
@@ -171,9 +175,6 @@
                 <div class="area-card">
                     <div class="area-icon">🔒</div>
                     <h3 class="area-title">Compliance Digital e Proteção de Dados</h3>
-                    <p class="area-description">
-                        Adequação à Lei Geral de Proteção de Dados (LGPD), estruturação de programas de compliance digital, políticas de privacidade, termos de uso e gestão de riscos relacionados ao tratamento de dados pessoais. Atuamos na prevenção de multas e sanções administrativas.
-                    </p>
                     <ul class="area-list">
                         <li>Adequação à LGPD</li>
                         <li>Políticas de privacidade e termos de uso</li>
@@ -184,9 +185,6 @@
                 <div class="area-card">
                     <div class="area-icon">👥</div>
                     <h3 class="area-title">Direito do Trabalho Empresarial</h3>
-                    <p class="area-description">
-                        Consultoria preventiva em relações de trabalho, estruturação de políticas internas, gestão de passivo trabalhista, negociação coletiva e defesa em ações trabalhistas. Foco na redução de riscos e custos trabalhistas através de medidas preventivas.
-                    </p>
                     <ul class="area-list">
                         <li>Consultoria trabalhista preventiva</li>
                         <li>Gestão de passivo trabalhista</li>
@@ -197,9 +195,6 @@
                 <div class="area-card">
                     <div class="area-icon">🏢</div>
                     <h3 class="area-title">Direito Societário e Governança</h3>
-                    <p class="area-description">
-                        Constituição, transformação e extinção de sociedades, estruturação societária, acordos de acionistas, governança corporativa, due diligence e operações de M&A. Atuamos na estruturação jurídica de empresas e grupos empresariais.
-                    </p>
                     <ul class="area-list">
                         <li>Constituição e transformação de sociedades</li>
                         <li>Acordos de acionistas e governança</li>
@@ -210,9 +205,6 @@
                 <div class="area-card">
                     <div class="area-icon">⚖️</div>
                     <h3 class="area-title">Direito Regulatório e Compliance</h3>
-                    <p class="area-description">
-                        Consultoria em conformidade regulatória, adequação a normas setoriais, estruturação de programas de compliance, gestão de riscos regulatórios e defesa em processos administrativos perante órgãos reguladores.
-                    </p>
                     <ul class="area-list">
                         <li>Programas de compliance</li>
                         <li>Adequação regulatória setorial</li>
@@ -223,9 +215,6 @@
                 <div class="area-card">
                     <div class="area-icon">📊</div>
                     <h3 class="area-title">Direito Tributário Empresarial</h3>
-                    <p class="area-description">
-                        Planejamento tributário, consultoria em estruturação de operações, defesa em processos administrativos e judiciais, recuperação de créditos tributários e adequação a regimes tributários especiais.
-                    </p>
                     <ul class="area-list">
                         <li>Planejamento tributário</li>
                         <li>Defesa em processos tributários</li>
@@ -233,6 +222,14 @@
                         <li>Consultoria em estruturação tributária</li>
                     </ul>
                 </div>
+                    </div>
+                </div>
+                <button class="carousel-btn carousel-btn-next" aria-label="Próximo">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M9 18l6-6-6-6"/>
+                    </svg>
+                </button>
+                <div class="carousel-indicators"></div>
             </div>
         </div>
     </section>
@@ -440,6 +437,7 @@
     </footer>
 
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/carousel.js"></script>
 </body>
 </html>
 
